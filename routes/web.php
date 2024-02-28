@@ -25,7 +25,7 @@ Route::any('/login', [LoginController::class, "show"]);
 
 Route::get('/profile/{id}', [ProfileController::class, "show"]);
 
-Route::any('/products', [ProductController::class, "show"])->middleware("RedirectIfAuthenticated");
+Route::any('/products', [ProductController::class, "show"])->middleware("redirectIfAuthenticated");
 
 // Route::redirect("/user", "/");
 
