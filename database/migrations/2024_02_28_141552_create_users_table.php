@@ -16,6 +16,8 @@ return new class extends Migration
             $table->string("username2", 32);
             $table->string("password", 255);
             $table->string("email", 255);
+            $table->dateTime("updated_at");
+            $table->dateTime("created_at");
         });
     }
 
