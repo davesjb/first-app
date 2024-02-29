@@ -12,8 +12,13 @@ class UserController extends Controller
     {
         // die("user controller");
         // $user = new User();
-        $user = User::whereIn("id", "=", "1")->get();
+
+        // $user = User::whereIn("id", "=", "1")->get();
+        // $user = User::whereIn("id", [1])->get();
+        $user = User::where();
+
         dd($user->toArray());
+
         // $user->username2 = "ed";
         // $user->password = "e";
         // $user->email = "e@ed.com";
