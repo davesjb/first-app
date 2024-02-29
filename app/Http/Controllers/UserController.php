@@ -11,7 +11,9 @@ class UserController extends Controller
     public function show()
     {
         // die("user controller");
-        $user = new User();
+        // $user = new User();
+        $user = User::whereIn("id", "=", "1")->get();
+        dd($user->toArray());
         // $user->username2 = "ed";
         // $user->password = "e";
         // $user->email = "e@ed.com";
