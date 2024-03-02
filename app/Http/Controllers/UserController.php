@@ -27,7 +27,7 @@ class UserController extends Controller
         // $user->save();
 
         // $result = $user->find(1)->toArray();
-        $result = $user->where("username2", "=", "ed")->toArray();
+        $result = $user->where("username", "=", "ed")->toArray();
 
 
         dd($result);

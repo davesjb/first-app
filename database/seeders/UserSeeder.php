@@ -46,5 +46,11 @@ class UserSeeder extends Seeder
         foreach ($users as $user) {
             User::insert($user);
         }
+
+
+
+        // $users = User::inRandomOrder()->take(20)->get();
+
+        // dd($users);
     }
 }

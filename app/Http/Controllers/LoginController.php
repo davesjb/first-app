@@ -8,11 +8,12 @@ class LoginController extends Controller
 {
     public function show()
     {
-        if (1 == 1) {
-            return view("login");
-        } else {
-            return view("welcome");
-        }
+        // if (1 == 1) {
+        //     return view("login");
+        // } else {
+        //     return view("welcome");
+        // }
+        return view("login");
     }
 
     public function store()

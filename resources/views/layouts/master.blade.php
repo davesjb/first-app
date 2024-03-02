@@ -5,17 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    @include ("partials/styles")
 </head>
-@include
-
 
 <body>
-    <h1>Profile ID #{{$id}}</h1>
-    @foreach( users as user)
+    @include ("partials/header")
 
-    @endforeach
+    @yield("body")
+
+
+    @include ("partials/footer")
+
+
+
+    @include ("partials/scripts")
 </body>
-
-
 
 </html>
