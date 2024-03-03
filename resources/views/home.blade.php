@@ -6,6 +6,7 @@
 @endsection
 
 @section ("body")
+{{ config("app.name")}}
 <table class="table">
     <thead>
         <tr>
